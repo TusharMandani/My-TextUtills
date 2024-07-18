@@ -12,8 +12,8 @@ function App() {
       </div>
 
       <div className="container">
-    <About></About>
-   </div>
+        <About></About>
+      </div>
     </>
   );
 }
