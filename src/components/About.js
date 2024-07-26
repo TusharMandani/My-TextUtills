@@ -1,31 +1,33 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function About() {
-  const [myStyle, setMystyle] = useState({
-    color: "black",
-    backgroundColor: "white",
-  });
+  // const [myStyle, setMystyle] = useState({
+  //   color: "black",
+  //   backgroundColor: "white",
+  // });
 
-  const [btnText, setBtnText] = useState("Enable Dark Mode");
+  // const [btnText, setBtnText] = useState("Enable Dark Mode");
 
-  const toggleTheme = () => {
-    if (myStyle.color === "black" && myStyle.backgroundColor === "white") {
-      setMystyle({
-        color: "white",
-        backgroundColor: "black",
-      });
+  // const toggleTheme = () => {
+  //   if (myStyle.color === "black" && myStyle.backgroundColor === "white") {
+  //     setMystyle({
+  //       color: "white",
+  //       backgroundColor: "black",
+  //     });
 
-      setBtnText("Enable Light Mode");
-    } else {
-      setMystyle({
-        color: "black",
-        backgroundColor: "white",
-      });
-      setBtnText("Enable Dark Mode");
-    }
-  };
+  //     setBtnText("Enable Light Mode");
+  //   } else {
+  //     setMystyle({
+  //       color: "black",
+  //       backgroundColor: "white",
+  //     });
+  //     setBtnText("Enable Dark Mode");
+  //   }
+  // };
   return (
-    <div className="container my-5 w-100" style={myStyle}>
+    // <div className="container my-5 w-100" style={myStyle}>
+    <div className="container my-5 w-100" style={{ color: "black" }}>
+
       <h1>About MyText Utils</h1>
       <p>
         Welcome to MyText Utils, your one-stop solution for all your text
@@ -107,9 +109,9 @@ export default function About() {
       </p>
 
       <div className="container my-3">
-        <button type="button" className="btn btn-primary" onClick={toggleTheme}>
+        {/* <button type="button" className="btn btn-primary" onClick={toggleTheme}>
           {btnText}
-        </button>
+        </button> */}
       </div>
     </div>
   );
